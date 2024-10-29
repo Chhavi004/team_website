@@ -7,7 +7,7 @@ export default function Overlay() {
             <nav className='flex p-6  space-x-16 px-16 absolute top-0 w-full pointer-events-auto bg-white'>
 
 
-                <Link href='/#home' className='font-semibold' ><Image src='/icons/logo.svg' width={64} height={64} /></Link>
+                <Link href='/#home' className='font-semibold ' ><Image src='/icons/logo.svg' width={64} height={64} /></Link>
 
                 <div className='flex-1 font-bold' />
 
