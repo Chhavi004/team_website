@@ -9,11 +9,18 @@
   --background: #ffffff;
   --foreground: #000000;
 }
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+   /* adjust to match your navbar height */
+}
+
 
 /* @media (prefers-color-scheme: dark) {
   :root {
     --background: #000000;
     --foreground: #ffffff;
+    --text: #ffffff;
   }
 
 } */
