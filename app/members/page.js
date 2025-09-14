@@ -80,7 +80,7 @@ export default function Team() {
 
         {/* Leader Image */}
         <section className="w-full max-w-4xl flex justify-center mb-16">
-          <Image
+          <img
             src="/pictures/IMG_4302.JPG"
             width={800}
             height={500}
@@ -125,7 +125,7 @@ export default function Team() {
                 key={idx}
                 className="flex flex-col items-center flex-shrink-0 w-72 bg-white shadow-md rounded-lg p-4"
               >
-                <Image
+                <img
                   src={team.img}
                   width={300}
                   height={200}
@@ -162,7 +162,7 @@ export default function Team() {
           className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
           onClick={() => setPopupImg(null)}
         >
-          <Image
+          <img
             src={popupImg}
             width={1000}
             height={700}

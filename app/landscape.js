@@ -23,7 +23,7 @@ export default function HomeLandscape() {
                             Originally a Maruti Ecco now converted to a fully autonomous electric vehicle.
                             Originally a Maruti Ecco now converted to a fully autonomous electric vehicle.
                         </span>
-                        <Image src='/pictures/cbe9457a-8cc9-488f-9a27-3dfe6e32c98a.jpg' height={500} width={400} />
+                        <img src='/pictures/cbe9457a-8cc9-488f-9a27-3dfe6e32c98a.jpg' height={500} width={400} />
                     </div>
                 </div>
             </section>
@@ -38,7 +38,7 @@ export default function HomeLandscape() {
                     <div className='h-1/6' />
                 </div>
                 <div className="h-screen w-3/5 flex flex-col pt-20 gap-4 ">
-                    <Image src='/pictures/android_medium_page1.jpg' height={720} width={1080} />
+                    <img src='/pictures/android_medium_page1.jpg' height={720} width={1080} />
                     <span className="font-medium text-slate-600 text-justify">
                         There are many variations of passages of Lorem Ipsum available, but the  majority have suffered alteration in some form, by injected humour, or  randomised words which don't look even slightly believable. If you are  going to use a passage of Lorem Ipsum, you need to be sure there isn't  anything embarrassing hidden in the middle of text. All the Lorem Ipsum  generators on the Internet tend to repeat predefined chunks as  necessary, making this the first true generator on the Internet.
                     </span>
@@ -57,7 +57,7 @@ export default function HomeLandscape() {
                 </div>
                 <div className="h-screen w-3/5 flex flex-col">
                     <div className='h-1/6' />
-                    <Image src='/pictures/sponsors.jpg' height={384} width={998} />
+                    <img src='/pictures/sponsors.jpg' height={384} width={998} />
                     
                     <span className="font-medium text-slate-600 text-justify w-3/4 mt-6">
                         Sponsors enable us to continue our experiments knowing we wont be putting ourselves out of business.

@@ -16,14 +16,14 @@ export default function Projects() {
             </div>
             <div className="flex-grow  flex float-right flex-wrap overflow-y-scroll items-start gap-2">
 
-                <Image src='/pictures/qubi.jpg' className="w-2/7" width={400} height={500} />
-                <Image src='/pictures/l3.jpg' className="w-2/7" width={400} height={500} />
-                <Image src='/pictures/drone.jpg' className="w-2/7" width={400} height={500} />
-                <Image src='/pictures/pratham.jpg' width={400} height={500} />
+                <img src='/pictures/qubi.jpg' className="w-2/7" width={400} height={500} />
+                <img src='/pictures/l3.jpg' className="w-2/7" width={400} height={500} />
+                <img src='/pictures/drone.jpg' className="w-2/7" width={400} height={500} />
+                <img src='/pictures/pratham.jpg' width={400} height={500} />
 
-                <Image src='/pictures/team.jpg' width={880} height={500} />
-                <Image src='/pictures/bot.jpg' className="w-1/3" width={400} height={500} />
-                <Image src='/pictures/android_medium_page1.jpg' height={400} width={500} />
+                <img src='/pictures/team.jpg' width={880} height={500} />
+                <img src='/pictures/bot.jpg' className="w-1/3" width={400} height={500} />
+                <img src='/pictures/android_medium_page1.jpg' height={400} width={500} />
 
 
 
