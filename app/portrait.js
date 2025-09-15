@@ -72,6 +72,7 @@ export default function HomePortrait() {
         </p>
       </section>
 
+      {/* Contact Section Added Below */}
       <section
         id="contact"
         className="h-screen snap-center flex flex-col px-6 py-10 justify-center items-center text-center space-y-4"
@@ -127,3 +128,4 @@ export default function HomePortrait() {
     </div>
   );
 }
+
