@@ -117,7 +117,7 @@ export default function HomeLandscape() {
         <div className="flex space-x-6 mt-6">
           {/* Instagram */}
           <a
-            href="https://instagram.com/yourprofile"
+            href="https://www.instagram.com/team_autoz?igsh=Z24wdDN2b2FmaWdj"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram"
@@ -135,7 +135,7 @@ export default function HomeLandscape() {
 
           {/* LinkedIn */}
           <a
-            href="https://linkedin.com/in/yourprofile"
+            href="https://www.linkedin.com/company/teamautoz/"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="LinkedIn"
