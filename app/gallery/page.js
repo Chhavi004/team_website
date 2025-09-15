@@ -1,35 +1,67 @@
 'use client';
 
-import Image from "next/image";
+import Image from 'next/image';
+import { useState } from 'react';
 
 export default function Gallery() {
+  const [selectedImage, setSelectedImage] = useState(null);
+
+  const images = [
+    { src: '/pictures/qubi.jpg', alt: 'Qubi' },
+    { src: '/pictures/l3.jpg', alt: 'L3' },
+    { src: '/pictures/drone.jpg', alt: 'Drone' },
+    { src: '/pictures/pratham.jpg', alt: 'Pratham' },
+    { src: '/pictures/team.jpg', alt: 'Team' },
+    { src: '/pictures/bot.jpg', alt: 'Bot' },
+    { src: '/pictures/android_medium_page1.jpg', alt: 'Android Medium' }
+  ];
+
   return (
-    <div className="flex h-full w-full p-4 overflow-hidden">
-      {/* Left heading column */}
-      <div className="flex flex-col w-64 pr-8">
-        <div className="flex-grow flex items-center">
-          <h1 className="font-black text-5xl">Gallery</h1>
-        </div>
+    <div className="flex flex-col h-full w-full p-8 overflow-hidden">
+        <div className="flex-grow flex flex-col items-center px-8 py-12 mt-8"></div>
+      {/* Heading */}
+      <h1 className="text-5xl font-black mb-8">Gallery</h1>
+
+      {/* Image grid */}
+      <div className="overflow-y-auto flex flex-wrap gap-6 justify-start">
+        {images.map((img, idx) => (
+          <GalleryImage
+            key={idx}
+            src={img.src}
+            alt={img.alt}
+            onClick={() => setSelectedImage(img)}
+          />
+        ))}
       </div>
 
-      {/* Right image gallery with vertical scroll */}
-      <div className="flex-grow overflow-y-auto flex flex-wrap gap-4">
-        <GalleryImage src="/pictures/qubi.jpg" alt="Qubi" />
-        <GalleryImage src="/pictures/l3.jpg" alt="L3" />
-        <GalleryImage src="/pictures/drone.jpg" alt="Drone" />
-        <GalleryImage src="/pictures/pratham.jpg" alt="Pratham" />
-        <GalleryImage src="/pictures/team.jpg" alt="Team" />
-        <GalleryImage src="/pictures/bot.jpg" alt="Bot" />
-        <GalleryImage src="/pictures/android_medium_page1.jpg" alt="Android Medium" />
-      </div>
+      {/* Lightbox */}
+      {selectedImage && (
+        <div
+          className="fixed inset-0 z-50 bg-black bg-opacity-80 flex items-center justify-center"
+          onClick={() => setSelectedImage(null)}
+        >
+          <div className="relative w-[90vw] h-[90vh] max-w-4xl">
+            <Image
+              src={selectedImage.src}
+              alt={selectedImage.alt}
+              fill
+              className="object-contain"
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
 
-function GalleryImage({ src, alt }) {
+function GalleryImage({ src, alt, onClick }) {
   return (
-    <div className="relative w-48 h-60 flex-shrink-0 rounded-lg overflow-hidden shadow-lg">
+    <div
+      onClick={onClick}
+      className="relative w-48 h-60 flex-shrink-0 rounded-lg overflow-hidden shadow-md cursor-pointer hover:scale-105 transition-transform"
+    >
       <Image src={src} alt={alt} fill style={{ objectFit: 'cover' }} />
     </div>
   );
 }
+

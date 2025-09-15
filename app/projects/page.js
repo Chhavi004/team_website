@@ -25,7 +25,9 @@ export default function Projects() {
 
   return (
     <div className="flex flex-col h-full w-full p-4">
+        <div className="flex-grow flex flex-col items-center px-8 py-12 mt-8"></div>
       <h1 className="font-black text-5xl mb-6">Projects</h1>
+      
 
       <div className="relative flex items-center w-full flex-grow">
         {/* Left scroll button */}
@@ -92,9 +94,9 @@ function ProjectCard({ src, title, description, link }) {
       <div className="p-4">
         <h2 className="font-display font-bold text-xl mb-2">{title}</h2>
         <p className="text-slate-600 mb-4 line-clamp-3">{description}</p>
-        <Link href={link} className="font-bold underline">
+        {/* <Link href={link} className="font-bold underline">
           More Details ...
-        </Link>
+        </Link> */}
       </div>
     </div>
   );
