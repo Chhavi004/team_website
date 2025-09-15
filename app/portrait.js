@@ -7,13 +7,7 @@ export default function HomePortrait() {
 
       <section id="home" className="h-screen flex flex-col px-6 snap-center justify-center">
         <h1 className="font-black text-6xl mb-6 text-center">Auto Z</h1>
-        <Link
-          href="/recruitments"
-          className="text-emerald-600 text-xl font-bold flex justify-center items-center gap-3 mb-6"
-        >
-          Recruitments
-          <Image src="/icons/arrow.svg" width={24} height={12} alt="arrow icon" />
-        </Link>
+       
         <div className="flex flex-col items-center gap-6">
           <span className="font-medium text-slate-600 text-justify max-w-md">
             <h2 className="font-bold text-xl pb-4 text-emerald-600">Who are We?</h2>
@@ -27,18 +21,19 @@ export default function HomePortrait() {
             alt="Autonomous vehicle"
             className="rounded-md"
           />
+           <Link
+          href="/recruitments"
+          className="text-emerald-600 text-xl font-bold flex justify-center items-center gap-3 mb-6"
+        >
+          Recruitments
+          <Image src="/icons/arrow.svg" width={24} height={12} alt="arrow icon" />
+        </Link>
         </div>
       </section>
 
       <section id="team" className="h-screen flex flex-col px-6 snap-center justify-center items-center space-y-6 text-center">
         <h1 className="font-black text-5xl">The Team</h1>
-        <Link
-          href="/members"
-          className="text-emerald-600 text-xl font-bold flex justify-center items-center gap-3"
-        >
-          View Members
-          <Image src="/icons/arrow.svg" width={24} height={12} alt="arrow icon" />
-        </Link>
+        
         <Image
           src="/pictures/android_medium_page1.jpg"
           height={240}
@@ -49,17 +44,18 @@ export default function HomePortrait() {
         <p className="font-medium text-slate-600 max-w-md">
           There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.
         </p>
+        <Link
+          href="/members"
+          className="text-emerald-600 text-xl font-bold flex justify-center items-center gap-3"
+        >
+          View Members
+          <Image src="/icons/arrow.svg" width={24} height={12} alt="arrow icon" />
+        </Link>
       </section>
 
       <section id="sponsors" className="h-screen flex flex-col px-6 snap-center justify-center items-center space-y-6 text-center">
         <h1 className="font-black text-5xl">Sponsors</h1>
-        <Link
-          href="/sponsors"
-          className="text-emerald-600 text-xl font-bold flex justify-center items-center gap-3"
-        >
-          Our Sponsors
-          <Image src="/icons/arrow.svg" width={24} height={12} alt="arrow icon" />
-        </Link>
+        
         <Image
           src="/pictures/sponsors.jpg"
           height={160}
@@ -70,6 +66,13 @@ export default function HomePortrait() {
         <p className="font-medium text-slate-600 max-w-md">
           Sponsors enable us to continue our experiments knowing we won't be putting ourselves out of business.
         </p>
+        <Link
+          href="/sponsors"
+          className="text-emerald-600 text-xl font-bold flex justify-center items-center gap-3"
+        >
+          Our Sponsors
+          <Image src="/icons/arrow.svg" width={24} height={12} alt="arrow icon" />
+        </Link>
       </section>
 
       {/* Contact Section Added Below */}
@@ -114,13 +117,15 @@ export default function HomePortrait() {
             className="text-gray-700 hover:text-emerald-600"
           >
             <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-8 w-8"
-              fill="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path d="M4.98 3.5C3.34 3.5 2 4.84 2 6.48a2.48 2.48 0 004.96 0c0-1.64-1.34-2.98-2.98-2.98zM2 8.82h5.96v12.18H2V8.82zm7.6 0h5.7v1.65h.1c.8-1.5 2.75-3.08 5.65-3.08 6 0 7.1 3.94 7.1 9.06V20H18v-8.7c0-2.1 0-4.8-3-4.8-3 0-3.46 2.34-3.46 4.66V20H9.6V8.82z" />
-            </svg>
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-8 w-8"
+            fill="currentColor"
+            viewBox="0 0 24 24"
+>
+  <path d="M19 0h-14C2.24 0 0 2.24 0 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5V5c0-2.76-2.24-5-5-5zM7.12 20.45H3.69V9h3.43v11.45zM5.4 7.45a1.98 1.98 0 110-3.96 1.98 1.98 0 010 3.96zM20.45 20.45h-3.43v-5.5c0-1.31-.03-2.99-1.83-2.99-1.84 0-2.12 1.43-2.12 2.9v5.59H9.64V9h3.3v1.56h.05c.46-.87 1.6-1.78 3.29-1.78 3.52 0 4.17 2.31 4.17 5.31v6.36z"/>
+</svg>
+
+            
           </a>
         </div>
       </section>
