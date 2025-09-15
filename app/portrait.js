@@ -3,27 +3,33 @@ export default function HomePortrait() {
     <div className="w-screen h-screen overflow-y-scroll snap-mandatory snap-y block md:hidden">
       
       {/* Section 1: Auto Z */}
-      <section id="home" className="h-screen snap-center flex flex-col px-6 py-10">
-        <div className="flex flex-col items-center text-center mb-6">
-          <h1 className="font-black text-5xl mb-4">Auto Z</h1>
-          <p className="font-medium text-slate-600 text-justify">
-            An autonomous ground vehicle developed by our OG group. The spark that started our journey.
-            Originally a Maruti Ecco now converted to a fully autonomous electric vehicle.
-          </p>
-        </div>
-        <div className="flex justify-center">
-          <img
-            src="/pictures/cbe9457a-8cc9-488f-9a27-3dfe6e32c98a.jpg"
-            className="w-full h-auto max-w-2xl mx-auto"
-          />
-        </div>
-        <a
-          href="/recruitments"
-          className="mt-6 self-center px-6 py-3 bg-emerald-600 text-white font-bold rounded-md"
-        >
-          Recruitments
-        </a>
-      </section>
+    <section id="home" className="min-h-screen snap-center flex flex-col justify-center items-center px-4 sm:px-6 md:px-12 py-10 gap-y-6">
+  {/* Heading */}
+  <div className="flex flex-col items-center text-center max-w-prose">
+    <h1 className="font-black text-4xl sm:text-5xl mb-3">Auto Z</h1>
+    <p className="font-medium text-slate-600 text-base sm:text-lg leading-relaxed">
+      An autonomous ground vehicle developed by our OG group. The spark that started our journey. Originally a Maruti Ecco now converted to a fully autonomous electric vehicle.
+    </p>
+  </div>
+
+  {/* Image */}
+  <div className="flex justify-center w-full">
+    <img
+      src="/pictures/cbe9457a-8cc9-488f-9a27-3dfe6e32c98a.jpg"
+      className="w-full h-auto max-w-md sm:max-w-lg md:max-w-2xl rounded-lg shadow-md"
+      alt="Auto Z Vehicle"
+    />
+  </div>
+
+  {/* CTA Button */}
+  <a
+    href="/recruitments"
+    className="w-full sm:w-auto px-6 py-3 bg-emerald-600 text-white font-bold rounded-md text-center hover:bg-emerald-700 transition"
+  >
+    Recruitments
+  </a>
+</section>
+
 
       {/* Section 2: Team */}
       <section id="team" className="h-screen snap-center flex flex-col px-6 py-10">
