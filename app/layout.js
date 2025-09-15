@@ -1,24 +1,13 @@
-import Overlay from "@/components/overlay";
-import "./globals.css";
+import Navbar from "../components/Navbar/page";
 
-export const metadata = {
-  title: "Auto Z",
-  description: "Team portfolio",
-};
+import "./globals.css";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className="antialiased">
-        {/* Navbar always fixed at the top */}
-        <div className="fixed top-0 left-0 w-full z-50 bg-white shadow">
-          <Overlay />
-        </div>
-
-        {/* Add padding to prevent overlap */}
-        <main className="pt-20">
-          {children}
-        </main>
+        <Navbar />
+        {children}
       </body>
     </html>
   );
