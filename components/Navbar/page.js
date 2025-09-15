@@ -1,10 +1,12 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
   return (
-    <nav className="w-full fixed top-0 z-50 bg-white shadow-md px-4 md:px-12 py-3 flex justify-between items-center">
-      {/* Logo / Title */}
-      <div className="text-xl md:text-2xl font-bold text-emerald-600">Auto Z</div>
+    <nav className="w-full flex items-center justify-between px-6 py-4 bg-white shadow-md z-50 fixed top-0">
+      <div className="flex items-center">
+        <Image src="/icons/logo.svg" alt="AutoZ Logo" width={40} height={40} />
+      </div>
 
       {/* Nav Links */}
       <div className="flex space-x-4 md:space-x-8 text-sm md:text-base font-medium">
