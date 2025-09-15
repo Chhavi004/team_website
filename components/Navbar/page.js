@@ -10,10 +10,10 @@ export default function Navbar() {
 
       {/* Nav Links */}
       <div className="flex space-x-4 md:space-x-8 text-sm md:text-base font-medium">
-        <Link href="#home" className="text-gray-700 hover:text-emerald-600">Home</Link>
+        <Link href="/" className="text-gray-700 hover:text-emerald-600">Home</Link>
         <Link href="/projects" className="text-gray-700 hover:text-emerald-600">Projects</Link>
         <Link href="/gallery" className="text-gray-700 hover:text-emerald-600">Gallery</Link>
-        <Link href="#contact" className="text-gray-700 hover:text-emerald-600">Contact</Link>
+        <Link href="/contact" className="text-gray-700 hover:text-emerald-600">Contact</Link>
         <Link href="/recruitments" className="text-gray-700 hover:text-emerald-600">Recruitments</Link>
       </div>
     </nav>
