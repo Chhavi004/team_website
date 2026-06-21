@@ -36,9 +36,10 @@ export default function HomeLandscape() {
           <div className="px-8 mt-6">
             <h2 className="font-bold text-2xl pb-4 text-emerald-600">Who are We?</h2>
             <p className="font-medium text-slate-600 text-justify leading-relaxed">
-              An autonomous ground vehicle developed by our OG group — the spark that
+              We are a team of passionate innovators from VIT, Vellore, committed to developing advanced autonomous robots. With expertise spanning engineering, computer science, and design, we thrive on interdisciplinary collaboration, believing that the fusion of diverse skills is the key to groundbreaking innovation by solutions.
+              {/*An autonomous ground vehicle developed by our OG group — the spark that
               started our journey. Originally a Maruti Ecco, it has now been converted
-              into a fully autonomous electric vehicle.
+              into a fully autonomous electric vehicle.*/}
             </p>
           </div>
         </div>
@@ -65,13 +66,13 @@ export default function HomeLandscape() {
             src="/pictures/android_medium_page1.jpg"
             height={720}
             width={1080}
-            alt="Team"
+            alt="Team 2025"
           />
           <span className="font-medium text-slate-600 text-justify">
-            We are a team of passionate innovators from VIT, Vellore, committed to developing advanced autonomous robots. With expertise spanning engineering, computer science, and design, we thrive on interdisciplinary collaboration, believing that the fusion of diverse skills is the key to groundbreaking innovation by solutions.
+            We are a team of passionate innovators from Vellore Iinstitute of Technology, Vellore committed to developing advanced autonomous robots. With expertise spanning engineering, computer science, and design, we thrive on interdisciplinary collaboration, believing that the fusion of diverse skills is the key to groundbreaking innovation by solutions.
           </span>
         </div>
-      </section>
+      </section>*/
 
       {/* Sponsors Section */}
       <section id="sponsors" className="h-screen flex px-16 snap-center">
