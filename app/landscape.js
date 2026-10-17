@@ -145,10 +145,10 @@ export default function HomeLandscape() {
             </svg>
           </a>
         </div>
+        <span className="font-medium text-slate-600 text-justify w-3/4 mt-6">
+          made with ❤️ by Team AutoZ at ALM 313, Vellore Institute of Technology-Vellore
+        </span>
       </section>
-      <span className="font-medium text-slate-600 text-justify w-3/4 mt-6">
-        made with ❤️ by Team AutoZ at ALM 313, Vellore Institute of Technology-Vellore
-      </span>
     </div>
   );
 }
